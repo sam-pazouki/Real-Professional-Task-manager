@@ -131,6 +131,7 @@ const handleLogin = async () => {
   }
 }
 
+// Cleanup
 onUnmounted(() => {
   if (errorTimeout) clearTimeout(errorTimeout)
 })

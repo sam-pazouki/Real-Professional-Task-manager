@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white border rounded-lg p-4 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+  <div
+    class="bg-white border rounded-lg p-4 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+  >
     <div class="flex justify-between items-start gap-4">
       <!-- Task Content -->
       <div class="flex-1">
@@ -56,6 +58,7 @@ const props = defineProps({
 
 const emit = defineEmits(['edit', 'delete'])
 
+// Add delete confirmation
 const handleDelete = () => {
   emit('delete', props.task.id)
 }
@@ -64,13 +67,13 @@ const formattedDate = computed(() => {
   return dayjs(props.task.dueDate).format('MMM D, YYYY')
 })
 
-// Updated priorityClass with Portuguese terms
 const priorityClass = computed(() => {
   const classes = {
-    'Baixa': 'bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium',
-    'Média': 'bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium',
-    'Alta': 'bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium'
+    Low: 'bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium',
+    Medium:
+      'bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium',
+    High: 'bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium'
   }
-  return classes[props.task.priority] || classes['Média']
+  return classes[props.task.priority] || classes.Medium
 })
 </script>
