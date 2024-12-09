@@ -10,7 +10,7 @@ A Vue.js task management application with mock authentication and local data sto
 - Responsive design
 - State management with Pinia
 
-## Technologies Used
+## 💻Technologies Used
 
 - Vue.js 3
 - Pinia for state management
@@ -42,12 +42,44 @@ Clear requirements
 Freedom to implement solutions
 Good balance of technical challenges
 
-## Challenges Faced
-Implementing responsive design
-State management optimization
-API integration
+📝 Development Experience
+Technical Challenges
+Implementing robust state management with Pinia
+Creating a responsive design that works across all devices
+Setting up JSON Server for API mocking
+Managing task categories and priorities effectively
+Learning Outcomes
+Enhanced understanding of Vue 3 Composition API
+Improved state management patterns
+Better appreciation for responsive design principles
+Practical experience with API integration
+Areas of Pride
+Clean and maintainable code structure
+Intuitive user interface
+Efficient state management
+Responsive design implementation
+Future Improvements
+Add user authentication
+Implement task filtering
+Add data persistence
+Enhance mobile experience
+Add unit tests
+📱 Testing
+Local Testing
+## Run development server
+npm run dev
 
-## Learning Outcomes
-Improved Vue 3 skills
-Better understanding of Pinia
-Enhanced CSS/TailwindCSS knowledge
+### Run JSON Server
+npm run api
+
+API Endpoints
+GET /tasks
+POST /tasks
+PUT /tasks/:id
+DELETE /tasks/:id
+🤝 Contributing
+Fork the repository
+Create your feature branch
+Commit your changes
+Push to the branch
+Create a Pull Request
