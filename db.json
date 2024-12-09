@@ -1,0 +1,76 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete project documentation",
+      "description": "Write technical documentation for the new features",
+      "category": "Work",
+      "priority": "High",
+      "dueDate": "2024-02-20",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Grocery shopping",
+      "description": "Buy fruits, vegetables, and weekly essentials",
+      "category": "Personal",
+      "priority": "Medium",
+      "dueDate": "2024-02-15",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Study for certification",
+      "description": "Review chapters 1-5 for upcoming exam",
+      "category": "Study",
+      "priority": "High",
+      "dueDate": "2024-02-25",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Dentist appointment",
+      "description": "Regular checkup at 2 PM",
+      "category": "Health",
+      "priority": "Medium",
+      "dueDate": "2024-02-18",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Team meeting preparation",
+      "description": "Prepare slides for weekly status update",
+      "category": "Work",
+      "priority": "High",
+      "dueDate": "2024-02-16",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Gym session",
+      "description": "Cardio and strength training",
+      "category": "Health",
+      "priority": "Low",
+      "dueDate": "2024-02-14",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "title": "Read JavaScript book",
+      "description": "Complete chapters on async/await",
+      "category": "Study",
+      "priority": "Medium",
+      "dueDate": "2024-02-22",
+      "completed": false
+    },
+    {
+      "id": 8,
+      "title": "Pay utility bills",
+      "description": "Electricity and water bills due",
+      "category": "Personal",
+      "priority": "High",
+      "dueDate": "2024-02-17",
+      "completed": false
+    }
+  ]
+}
