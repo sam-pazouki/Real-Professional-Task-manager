@@ -18,9 +18,36 @@ A Vue.js task management application with mock authentication and local data sto
 - JSON Server for mock API
 - Vue Router for navigation
 
-## Setup Instructions
+## Environment Setup
+Create a .env file in the root directory:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/BextTeste.git
-cd BextTeste
+VITE_API_URL=http://localhost:3001
+
+## Features
+Task management (CRUD operations)
+Category organization
+Priority levels
+Due date tracking
+Responsive design
+
+## Technical Stack
+Vue 3 (Composition API)
+Vite
+Pinia
+TailwindCSS
+JSON Server
+
+## Positive Aspects
+Clear requirements
+Freedom to implement solutions
+Good balance of technical challenges
+
+## Challenges Faced
+Implementing responsive design
+State management optimization
+API integration
+
+## Learning Outcomes
+Improved Vue 3 skills
+Better understanding of Pinia
+Enhanced CSS/TailwindCSS knowledge
