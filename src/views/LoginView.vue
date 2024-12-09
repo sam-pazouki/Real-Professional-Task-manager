@@ -39,7 +39,7 @@
 
         <div>
           <BaseButton type="submit" :loading="loading" :disabled="loading" full>
-            {{ loading ? 'Signing in...' : 'Entrar' }}
+            {{ loading ? 'Entrando...' : 'Entrar' }}
           </BaseButton>
         </div>
 
