@@ -42,42 +42,49 @@ Clear requirements
 Freedom to implement solutions
 Good balance of technical challenges
 
-📝 Development Experience
-Technical Challenges
+## 📝 Development Experience
+
+# Technical Challenges
 Implementing robust state management with Pinia
 Creating a responsive design that works across all devices
 Setting up JSON Server for API mocking
 Managing task categories and priorities effectively
-Learning Outcomes
+
+## Learning Outcomes
 Enhanced understanding of Vue 3 Composition API
 Improved state management patterns
 Better appreciation for responsive design principles
 Practical experience with API integration
-Areas of Pride
+
+## Areas of Pride
 Clean and maintainable code structure
 Intuitive user interface
 Efficient state management
 Responsive design implementation
-Future Improvements
+
+## Future Improvements
 Add user authentication
 Implement task filtering
 Add data persistence
 Enhance mobile experience
 Add unit tests
-📱 Testing
-Local Testing
+
+## 📱 Testing
+
+# Local Testing
 ## Run development server
 npm run dev
 
 ### Run JSON Server
 npm run api
 
-API Endpoints
+## API Endpoints
 GET /tasks
 POST /tasks
 PUT /tasks/:id
 DELETE /tasks/:id
-🤝 Contributing
+
+## 🤝 Contributing
 Fork the repository
 Create your feature branch
 Commit your changes
