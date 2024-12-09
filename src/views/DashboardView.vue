@@ -26,13 +26,33 @@ const selectedPriority = ref('')
 const categories = computed(() => taskStore.categories)
 const priorities = computed(() => taskStore.priorities)
 
+// Visible categories based on filter
+const visibleCategories = computed(() => {
+  if (!selectedCategory.value) return categories.value
+  return categories.value.filter(category => category === selectedCategory.value)
+})
+
 // Task filtering
 const filterTasks = (category) => {
-  let tasks = taskStore.tasks.filter((task) => task.category === category)
+  let tasks = taskStore.tasks
+
+  // First filter by category
+  tasks = tasks.filter(task => task.category === category)
+
+  // Then apply priority filter if selected
   if (selectedPriority.value) {
-    tasks = tasks.filter((task) => task.priority === selectedPriority.value)
+    tasks = tasks.filter(task => task.priority === selectedPriority.value)
   }
+
   return tasks
+}
+
+// Filter change handler
+const handleFilterChange = () => {
+  console.log('Filters updated:', {
+    category: selectedCategory.value,
+    priority: selectedPriority.value
+  })
 }
 
 // Modal handlers
@@ -63,7 +83,6 @@ const handleSaveTask = async (taskData) => {
 // Delete operations
 const handleDeleteTask = async (taskId) => {
   try {
-    // Find the task by ID to get its title
     const taskToDelete = taskStore.tasks.find((task) => task.id === taskId)
     if (!taskToDelete) return
 
@@ -163,15 +182,15 @@ onMounted(() => {
         <!-- Error State -->
         <div v-else-if="taskStore.error" class="text-center py-8">
           <p class="text-red-500">{{ taskStore.error }}</p>
-          <BaseButton class="mt-4" @click="refreshTasks"
-            >Tentar novamente</BaseButton
-          >
+          <BaseButton class="mt-4" @click="refreshTasks">
+            Tentar novamente
+          </BaseButton>
         </div>
 
         <!-- Task Lists -->
         <div v-else class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <TaskList
-            v-for="category in categories"
+            v-for="category in visibleCategories"
             :key="category"
             :category="category"
             :tasks="filterTasks(category)"
@@ -192,3 +211,4 @@ onMounted(() => {
     </TransitionRoot>
   </div>
 </template>
+
