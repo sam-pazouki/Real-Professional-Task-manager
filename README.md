@@ -18,6 +18,17 @@ A Vue.js task management application with mock authentication and local data sto
 - JSON Server for mock API
 - Vue Router for navigation
 
+## Interface
+![Screenshot 2024-12-09 023526](https://github.com/user-attachments/assets/ad31a154-5776-4ce6-b995-fd6f2a3f0252)
+![Screenshot 2024-12-09 220016](https://github.com/user-attachments/assets/9cf802d1-42e7-4a93-b166-0b0ccfb568a3)
+![Screenshot 2024-12-09 220027](https://github.com/user-attachments/assets/f4f98157-94bb-4720-b547-cfbc44a40c7b)
+
+
+
+
+
+
+
 ## Environment Setup
 Create a .env file in the root directory:
 
